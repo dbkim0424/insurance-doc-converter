@@ -368,10 +368,20 @@
   /* Footer */
   footer { text-align: center; padding: 32px 0 16px; font-size: 13px; color: var(--text-tertiary); }
 
-  @media (max-width: 480px) {
-    .hero h1 { font-size: 26px; }
+  @media (max-width: 540px) {
+    .wrap { padding: 0 14px 48px; }
+    .card { padding: 18px 16px; }
+    .hero { padding: 32px 0 24px; }
+    .hero h1 { font-size: 24px; }
+    .hero p { font-size: 14px; }
     .options-grid { grid-template-columns: 1fr; }
-    .thumb-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
+    .thumb-grid { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; }
+    .thumb-name { max-width: 48px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .split-option-row { flex-wrap: wrap; gap: 8px; }
+    .split-option-row span { flex: none; width: 100%; }
+    input[type=number] { width: 100%; }
+    .drop-zone { padding: 28px 16px; }
+    .results-header { flex-wrap: wrap; gap: 8px; }
   }
 </style>
 </head>
